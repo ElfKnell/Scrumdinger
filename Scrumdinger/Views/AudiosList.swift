@@ -13,8 +13,13 @@ struct AudiosList: View {
     
     var body: some View {
         ScrollView {
+            
             ForEach (audios, id: \.self) { audio in
+                Divider()
+                
                 Audio(audio: audio)
+                
+                Divider()
             }
         }
     }
